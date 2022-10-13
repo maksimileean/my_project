@@ -10,6 +10,7 @@ lengthCheck('Тестовая строка', 50);
 
 //------------------------------------------------------------------------------------------------------------------------------------
 
+// eslint-disable-next-line no-unused-vars
 const getRandomPositiveInteger = (a, b) => {
   if (a < 0 || b < 0) {
     return NaN;
@@ -22,9 +23,13 @@ const getRandomPositiveInteger = (a, b) => {
 
 function shuffle(array) {
   let currentIndex = array.length, randomIndex;
+
   while (currentIndex !== 0) {
+
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
+
+    // And swap it with the current element.
     [array[currentIndex], array[randomIndex]] = [
       array[randomIndex], array[currentIndex]];
   }
@@ -32,6 +37,7 @@ function shuffle(array) {
   return array;
 }
 
+// eslint-disable-next-line camelcase
 const Id_numbers = [];
 const testfunc = (massive) => {
   for (let i = 0; i < 25; i++){
@@ -40,6 +46,8 @@ const testfunc = (massive) => {
   shuffle(massive);
   return massive;
 };
+// eslint-disable-next-line no-console
+console.log(testfunc(Id_numbers));
 
 
 const photo = (i) => ({
@@ -50,5 +58,8 @@ const photo = (i) => ({
   comments: getRandomPositiveInteger(0, 200)
 });
 
+// eslint-disable-next-line camelcase
 const list_of_photos = Array.from({length: 25}, (a, i) => photo(i));
+
+// eslint-disable-next-line no-console
 console.log(list_of_photos);
