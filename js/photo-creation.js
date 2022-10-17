@@ -1,4 +1,4 @@
-import { getRandomPositiveInteger } from "./get-random-integer.js";
+import { getRandomPositiveInteger } from './get-random-integer.js';
 
 const photo = (i) => ({
   id: i,
