@@ -1,10 +1,9 @@
 
-import {list_of_photos} from './photo-creation.js';
-
+import {listOfPhotos} from './photo-creation.js';
 
 const pictureTemplate = document.querySelector('#picture').content;
 
-const photos = list_of_photos;
+const photos = listOfPhotos;
 
 const picturesList = document.querySelector('.pictures');
 const fragment = document.createDocumentFragment();
