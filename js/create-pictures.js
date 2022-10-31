@@ -1,9 +1,9 @@
-// eslint-disable-next-line camelcase
+
 import {list_of_photos} from './photo-creation.js';
 
 
 const pictureTemplate = document.querySelector('#picture').content;
-// eslint-disable-next-line camelcase
+
 const photos = list_of_photos;
 
 const picturesList = document.querySelector('.pictures');
