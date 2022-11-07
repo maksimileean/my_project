@@ -8,4 +8,6 @@ const photo = (i) => ({
   comments: getRandomPositiveInteger(0, 200)
 });
 
-export {photo};
+const listOfPhotos = Array.from({length: 25}, (a, i) => photo(i));
+
+export {listOfPhotos};
